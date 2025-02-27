@@ -76,7 +76,6 @@ installation(){
 	pprint "\n\nUpgrading pip and installing dependency packages..."
 	pip3 install -U pip &>>pypilog.txt &&
 	pip3 install -U -r requirements.txt &>>pypilog.txt &&
-        pip3 install gunicorn &&
 	pprint "DONE.\n" "cgreen" && return
 	pprint "FAIL.\n" "cred"
 	exit 1
